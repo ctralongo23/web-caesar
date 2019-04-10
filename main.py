@@ -10,6 +10,9 @@ form="""
 <html>
     <head>
         <style>
+             @import url('https://fonts.googleapis.com/css?family=Crafty+Girls');
+        </style>
+        <style>
             form {{
                 background-color: #eee;
                 padding: 20px;
@@ -25,15 +28,36 @@ form="""
                 height: 120px;
             }}
 
+            .background{{
+                background:purple;
+            }}
+
+            .dude{{
+                 display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 15%;
+                padding-top:20px;
+            }}
+
+            .title{{
+                text-align:center;
+                font-family: 'Crafty Girls', cursive;
+                font-size:90px;
+                font-weight:bold;
+            }}
+
         </style>
+        <div class="title">Web Caesar</div>
     </head>
-    <body>
+    <body class="background">
         <form action="/" method="post">
             <label for="rotate-by">Rotate by:</label>
             <input id="rotate-by" type="text" name="rot" value="0"/>
             <textarea name="textarea">{0}</textarea>
-            <input type="submit"/>  
+            <input type="submit" value="Push Me"/>
         </form>       
+         <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/0092_-_Wien_-_Kunsthistorisches_Museum_-_Gaius_Julius_Caesar.jpg" class="dude"/>
     </body>
 </html>
 """
